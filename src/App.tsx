@@ -19,7 +19,7 @@ import {
 import { motion } from 'motion/react';
 
 const WHATSAPP_NUMBER = "51994968686"; // Exemplo de número de Porto Alegre
-const WHATSAPP_LINK = `https://wa.me/${5551994968686}?text=Olá! Gostaria de um orçamento com a Tec Info.`;
+const WHATSAPP_LINK = `https://wa.me/${5551994968686}?text=Olá! Gostaria de um orçamento com a TEC T.I.`;
 
 // COLOQUE A URL DA SUA IMAGEM AQUI
 const LOGO_URL = "https://i.ibb.co/0RDqCj63/290010175-3186303611586221-5368347137890691665-n-removebg-preview.png"; 
@@ -30,7 +30,7 @@ const Logo = ({ className = "" }: { className?: string }) => (
       {LOGO_URL ? (
         <img 
           src={LOGO_URL} 
-          alt="Tec Info logo" 
+          alt="TEC T.I logo" 
           className="w-full h-full object-contain rounded-full"
           referrerPolicy="no-referrer"
         />
@@ -38,13 +38,13 @@ const Logo = ({ className = "" }: { className?: string }) => (
         <>
           <div className="absolute inset-0 border-2 border-lime-500 rounded-full"></div>
           <div className="absolute inset-1 border-[3px] border-slate-950 rounded-full bg-white flex flex-col items-center justify-center overflow-hidden">
-            <span className="text-[10px] font-black text-slate-950 leading-none tracking-tighter">Tec</span>
-            <span className="text-[4px] font-bold text-slate-950 leading-none tracking-[0.1em] mt-0.5">INFO</span>
+            <span className="text-[10px] font-black text-slate-950 leading-none tracking-tighter">TEC</span>
+            <span className="text-[4px] font-bold text-slate-950 leading-none tracking-[0.1em] mt-0.5">T.I</span>
           </div>
         </>
       )}
     </div>
-    <span className="text-2xl font-bold text-white tracking-tight">Tec <span className="text-lime-500">Info</span></span>
+    <span className="text-2xl font-bold text-white tracking-tight">TEC <span className="text-lime-500">T.I</span></span>
   </div>
 );
 
@@ -221,7 +221,7 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-lime-500 font-bold uppercase tracking-widest text-sm mb-4">O que fazemos</h2>
             <p className="text-4xl font-bold text-white mb-6">Soluções Completas para sua Tecnologia</p>
-            <p className="text-lg text-slate-400">Desde uma simples limpeza até reparos complexos em placa-mãe. Atendemos todas as marcas.</p>
+            <p className="text-lg text-slate-400">Desde uma simples limpeza até manutenções preventivas completas. Atendemos todas as marcas.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -244,11 +244,6 @@ export default function App() {
               icon={ShieldCheck}
               title="Remoção de Vírus"
               description="Limpeza profunda de malware, instalação de antivírus profissional e proteção de dados sensíveis."
-            />
-            <FeatureCard 
-              icon={Wrench}
-              title="Reparo de Placa-mãe"
-              description="Micro-soldagem e reparo de circuitos. Economize até 70% em vez de trocar a placa inteira."
             />
             <FeatureCard 
               icon={Clock}
@@ -408,7 +403,7 @@ export default function App() {
           </div>
           
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-xs">
-            <p>© 2024 Tec Info Porto Alegre. Todos os direitos reservados.</p>
+            <p>© 2024 TEC T.I Porto Alegre. Todos os direitos reservados.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-slate-400">Privacidade</a>
               <a href="#" className="hover:text-slate-400">Termos</a>
