@@ -392,11 +392,11 @@ export default function App() {
               <ul className="space-y-4 text-slate-500 text-sm">
                 <li className="flex gap-3">
                   <MapPin className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                  <span>Av. Borges de Medeiros, 1234 - Centro Histórico, Porto Alegre - RS</span>
+                  <span> Rua Santana, 244 - Bairro Santana, Porto Alegre - RS</span>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                  <span>Seg - Sex: 09h às 18h<br />Sáb: 09h às 13h</span>
+                  <span>Seg - Sex: 09h às 18h<br /></span>
                 </li>
               </ul>
             </div>
