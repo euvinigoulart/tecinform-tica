@@ -241,11 +241,6 @@ export default function App() {
               description="Montagem, manutenção preventiva e corretiva. Otimização de software para máximo desempenho em jogos."
             />
             <FeatureCard 
-              icon={ShieldCheck}
-              title="Remoção de Vírus"
-              description="Limpeza profunda de malware, instalação de antivírus profissional e proteção de dados sensíveis."
-            />
-            <FeatureCard 
               icon={Clock}
               title="Manutenção Preventiva"
               description="Limpeza interna e troca de pasta térmica. Evite superaquecimento e queima de componentes."
@@ -392,11 +387,11 @@ export default function App() {
               <ul className="space-y-4 text-slate-500 text-sm">
                 <li className="flex gap-3">
                   <MapPin className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                  <span> Rua Santana, 244 - Bairro Santana, Porto Alegre - RS</span>
+                  <span>Av. Borges de Medeiros, 1234 - Centro Histórico, Porto Alegre - RS</span>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                  <span>Seg - Sex: 09h às 18h<br /></span>
+                  <span>Seg - Sex: 09h às 18h<br />Sáb: 09h às 13h</span>
                 </li>
               </ul>
             </div>
