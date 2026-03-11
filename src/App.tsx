@@ -88,7 +88,7 @@ export default function App() {
               className="bg-lime-500 text-slate-950 px-6 py-2.5 rounded-full hover:bg-lime-400 transition-all shadow-lg shadow-lime-500/20 flex items-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
-              Orçamento Grátis
+              Solicitar Orçamento
             </a>
           </div>
         </div>
@@ -108,11 +108,11 @@ export default function App() {
                 Atendimento em Porto Alegre
               </div>
               <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
-                Seu Notebook Parou? <br />
-                <span className="text-lime-500">Nós Resolvemos Rápido.</span>
+                Manutenção e Reparo de <br />
+                <span className="text-lime-500">Notebooks em Porto Alegre</span>
               </h1>
               <p className="text-xl text-slate-400 mb-8 leading-relaxed max-w-xl">
-                Manutenção de Computadores e notebooks, PCs gamer e MacBooks com garantia, peças originais e agilidade que você precisa.
+                Manutenção de Computadores e notebooks, PCs gamer. Especializada em todas as marcas e modelos, com garantia, peças originais e agilidade que você precisa.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -123,7 +123,7 @@ export default function App() {
                   className="flex items-center justify-center gap-3 bg-lime-500 text-slate-950 px-8 py-4 rounded-2xl text-lg font-bold hover:bg-lime-400 transition-all shadow-xl shadow-lime-900/20 hover:-translate-y-1"
                 >
                   <MessageCircle className="w-6 h-6" />
-                  Falar com Técnico Agora
+                  Solicitar Orçamento
                 </a>
                 <div className="flex items-center gap-4 px-4">
                   <div className="flex -space-x-3">
@@ -220,7 +220,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-lime-500 font-bold uppercase tracking-widest text-sm mb-4">O que fazemos</h2>
-            <p className="text-4xl font-bold text-white mb-6">Soluções Completas para sua Tecnologia</p>
+            <p className="text-4xl font-bold text-white mb-6">Serviços Especializados de Manutenção</p>
             <p className="text-lg text-slate-400">Desde uma simples limpeza até manutenções preventivas completas. Atendemos todas as marcas.</p>
           </div>
 
@@ -228,17 +228,17 @@ export default function App() {
             <FeatureCard 
               icon={Laptop}
               title="Reparo de Notebooks"
-              description="Troca de tela, teclado, bateria, reparo de carcaça e dobradiças. Especialistas em Dell, HP, Lenovo e Acer."
+              description="Troca de tela, teclado, bateria, reparo de carcaça e dobradiças. Especialistas em todas as marcas."
             />
             <FeatureCard 
               icon={Zap}
               title="Upgrade de Performance"
-              description="Deixe seu computador 10x mais rápido com SSD e upgrade de memória RAM. Instalamos e migramos seus dados."
+              description="Deixe seu computador 10x mais rápido com SSD e upgrade de memória RAM. Instalação de Componentes."
             />
             <FeatureCard 
               icon={Cpu}
               title="PC Gamer & Workstation"
-              description="Montagem, manutenção preventiva e corretiva. Otimização de software para máximo desempenho em jogos."
+              description="Montagem, manutenção preventiva e corretiva. Montagem de Hardware para máximo desempenho em jogos."
             />
             <FeatureCard 
               icon={Clock}
@@ -330,7 +330,7 @@ export default function App() {
                 className="w-full md:w-auto bg-slate-950 text-lime-400 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-black transition-all shadow-2xl flex items-center justify-center gap-3"
               >
                 <MessageCircle className="w-6 h-6" />
-                Solicitar Orçamento Grátis
+                Solicitar Orçamento
               </a>
               <div className="flex items-center gap-3 text-slate-950">
                 <Phone className="w-5 h-5" />
@@ -387,20 +387,20 @@ export default function App() {
               <ul className="space-y-4 text-slate-500 text-sm">
                 <li className="flex gap-3">
                   <MapPin className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                  <span>Av. Borges de Medeiros, 1234 - Centro Histórico, Porto Alegre - RS</span>
+                  <span>Rua Santana, 244 - Santana - Porto Alegre - RS - CEP: 90.040-144</span>
                 </li>
                 <li className="flex gap-3">
                   <Clock className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                  <span>Seg - Sex: 09h às 18h<br />Sáb: 09h às 13h</span>
+                  <span>Seg - Sex: 09h às 18h</span>
                 </li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-xs">
-            <p>© 2024 TEC T.I Porto Alegre. Todos os direitos reservados.</p>
+            <p>© 2024 TEC T.I Porto Alegre. Todos os direitos reservados. | CNPJ: 62.141.042/0001-08</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-slate-400">Privacidade</a>
+              <a href="https://sites.google.com/view/rauletefausto/in%C3%ADcio" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400">Privacidade</a>
               <a href="#" className="hover:text-slate-400">Termos</a>
             </div>
           </div>
