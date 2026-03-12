@@ -78,7 +78,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Logo />
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-            <a href="#servicos" className="hover:text-lime-400 transition-colors">Serviços</a>
             <a href="#sobre" className="hover:text-lime-400 transition-colors">Sobre Nós</a>
             <a href="#depoimentos" className="hover:text-lime-400 transition-colors">Depoimentos</a>
             <a 
@@ -108,11 +107,11 @@ export default function App() {
                 Atendimento em Porto Alegre
               </div>
               <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
-                Manutenção e Reparo de <br />
-                <span className="text-lime-500">Notebooks em Porto Alegre</span>
+                Seja bem-vindo à <br />
+                <span className="text-lime-500">Tec T.I</span>
               </h1>
               <p className="text-xl text-slate-400 mb-8 leading-relaxed max-w-xl">
-                Manutenção de Computadores e notebooks, PCs gamer. Especializada em todas as marcas e modelos, com garantia, peças originais e agilidade que você precisa.
+                Especializada em todas as marcas e modelos, com garantia, peças originais e agilidade que você precisa.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -148,7 +147,6 @@ export default function App() {
                 <ServiceItem text="Orçamento em 48h" />
                 <ServiceItem text="Garantia de 180 dias" />
                 <ServiceItem text="Peças Originais" />
-                <ServiceItem text="Técnicos Certificados" />
               </div>
             </motion.div>
 
@@ -211,40 +209,6 @@ export default function App() {
               <p className="text-4xl font-bold text-lime-500 mb-1">100%</p>
               <p className="text-slate-500 text-sm uppercase tracking-widest font-semibold">Satisfação</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="servicos" className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-lime-500 font-bold uppercase tracking-widest text-sm mb-4">O que fazemos</h2>
-            <p className="text-4xl font-bold text-white mb-6">Serviços Especializados de Manutenção</p>
-            <p className="text-lg text-slate-400">Desde uma simples limpeza até manutenções preventivas completas. Atendemos todas as marcas.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FeatureCard 
-              icon={Laptop}
-              title="Reparo de Notebooks"
-              description="Troca de tela, teclado, bateria, reparo de carcaça e dobradiças. Especialistas em todas as marcas."
-            />
-            <FeatureCard 
-              icon={Zap}
-              title="Upgrade de Performance"
-              description="Deixe seu computador 10x mais rápido com SSD e upgrade de memória RAM. Instalação de Componentes."
-            />
-            <FeatureCard 
-              icon={Cpu}
-              title="PC Gamer & Workstation"
-              description="Montagem, manutenção preventiva e corretiva. Montagem de Hardware para máximo desempenho em jogos."
-            />
-            <FeatureCard 
-              icon={Clock}
-              title="Manutenção Preventiva"
-              description="Limpeza interna e troca de pasta térmica. Evite superaquecimento e queima de componentes."
-            />
           </div>
         </div>
       </section>
@@ -376,7 +340,6 @@ export default function App() {
               <h4 className="font-bold text-white mb-6 uppercase tracking-widest text-xs">Links Rápidos</h4>
               <ul className="space-y-4 text-slate-500 text-sm">
                 <li><a href="#" className="hover:text-lime-500 transition-colors">Início</a></li>
-                <li><a href="#servicos" className="hover:text-lime-500 transition-colors">Serviços</a></li>
                 <li><a href="#sobre" className="hover:text-lime-500 transition-colors">Sobre Nós</a></li>
                 <li><a href={WHATSAPP_LINK} className="hover:text-lime-500 transition-colors">Contato</a></li>
               </ul>
