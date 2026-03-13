@@ -21,33 +21,6 @@ import { motion } from 'motion/react';
 const WHATSAPP_NUMBER = "51994968686"; // Exemplo de número de Porto Alegre
 const WHATSAPP_LINK = `https://wa.me/${5551994968686}?text=Olá! Gostaria de um orçamento com a TEC T.I.`;
 
-// COLOQUE A URL DA SUA IMAGEM AQUI
-const LOGO_URL = "https://i.ibb.co/0RDqCj63/290010175-3186303611586221-5368347137890691665-n-removebg-preview.png"; 
-
-const Logo = ({ className = "" }: { className?: string }) => (
-  <div className={`flex items-center gap-3 ${className}`}>
-    <div className="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
-      {LOGO_URL ? (
-        <img 
-          src={LOGO_URL} 
-          alt="TEC T.I logo" 
-          className="w-full h-full object-contain rounded-full"
-          referrerPolicy="no-referrer"
-        />
-      ) : (
-        <>
-          <div className="absolute inset-0 border-2 border-lime-500 rounded-full"></div>
-          <div className="absolute inset-1 border-[3px] border-slate-950 rounded-full bg-white flex flex-col items-center justify-center overflow-hidden">
-            <span className="text-[10px] font-black text-slate-950 leading-none tracking-tighter">TEC</span>
-            <span className="text-[4px] font-bold text-slate-950 leading-none tracking-[0.1em] mt-0.5">T.I</span>
-          </div>
-        </>
-      )}
-    </div>
-    <span className="text-2xl font-bold text-white tracking-tight">TEC <span className="text-lime-500">T.I</span></span>
-  </div>
-);
-
 const FeatureCard = ({ icon: Icon, title, description }: { icon: any, title: string, description: string }) => (
   <motion.div 
     initial={{ opacity: 0, y: 20 }}
@@ -76,7 +49,7 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <Logo />
+          <div />
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
             <a href="#sobre" className="hover:text-lime-400 transition-colors">Sobre Nós</a>
             <a href="#depoimentos" className="hover:text-lime-400 transition-colors">Depoimentos</a>
@@ -87,7 +60,7 @@ export default function App() {
               className="bg-lime-500 text-slate-950 px-6 py-2.5 rounded-full hover:bg-lime-400 transition-all shadow-lg shadow-lime-500/20 flex items-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
-              Solicitar Orçamento
+              Solicitar avaliação em 48h
             </a>
           </div>
         </div>
@@ -107,8 +80,7 @@ export default function App() {
                 Atendimento em Porto Alegre
               </div>
               <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
-                Seja bem-vindo à <br />
-                <span className="text-lime-500">Tec T.I</span>
+                Seja bem vindo
               </h1>
               <p className="text-xl text-slate-400 mb-8 leading-relaxed max-w-xl">
                 Especializada em todas as marcas e modelos, com garantia, peças originais e agilidade que você precisa.
@@ -122,7 +94,7 @@ export default function App() {
                   className="flex items-center justify-center gap-3 bg-lime-500 text-slate-950 px-8 py-4 rounded-2xl text-lg font-bold hover:bg-lime-400 transition-all shadow-xl shadow-lime-900/20 hover:-translate-y-1"
                 >
                   <MessageCircle className="w-6 h-6" />
-                  Solicitar Orçamento
+                  Solicitar avaliação em 48h
                 </a>
                 <div className="flex items-center gap-4 px-4">
                   <div className="flex -space-x-3">
@@ -144,7 +116,7 @@ export default function App() {
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                <ServiceItem text="Orçamento em 48h" />
+                <ServiceItem text="Avaliação em até 48h" />
                 <ServiceItem text="Garantia de 180 dias" />
                 <ServiceItem text="Peças Originais" />
               </div>
@@ -213,71 +185,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Quality Showcase Section */}
-      <section className="py-24 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-lime-500 font-bold uppercase tracking-widest text-sm mb-4">Qualidade Impecável</h2>
-              <h3 className="text-4xl font-bold text-white mb-6">Seu equipamento novo, de novo.</h3>
-              <p className="text-lg text-slate-400 mb-8">
-                Não entregamos apenas um conserto, entregamos renovação. Cada notebook passa por uma limpeza estética completa e testes rigorosos de performance antes de voltar para suas mãos.
-              </p>
-              <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 text-slate-300">
-                  <div className="w-6 h-6 bg-lime-500/20 rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="text-lime-500 w-4 h-4" />
-                  </div>
-                  <span>Limpeza interna e externa inclusa</span>
-                </li>
-                <li className="flex items-center gap-3 text-slate-300">
-                  <div className="w-6 h-6 bg-lime-500/20 rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="text-lime-500 w-4 h-4" />
-                  </div>
-                  <span>Organização de cabos e componentes</span>
-                </li>
-                <li className="flex items-center gap-3 text-slate-300">
-                  <div className="w-6 h-6 bg-lime-500/20 rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="text-lime-500 w-4 h-4" />
-                  </div>
-                  <span>Pasta térmica de alta condutividade</span>
-                </li>
-              </ul>
-              <a 
-                href="https://www.instagram.com/tecti.informatica/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-bold border border-white/10 transition-all"
-              >
-                Ver mais resultados no Instagram
-              </a>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-                <img 
-                  src="https://i.ibb.co/Mzb2t0N/Captura-de-tela-2026-02-24-110926.png" 
-                  alt="Notebook limpo e funcionando perfeitamente" 
-                  className="w-full aspect-square object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              {/* Decorative glow */}
-              <div className="absolute -inset-4 bg-lime-500/20 blur-3xl -z-10 rounded-full"></div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-lime-500 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -294,7 +201,7 @@ export default function App() {
                 className="w-full md:w-auto bg-slate-950 text-lime-400 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-black transition-all shadow-2xl flex items-center justify-center gap-3"
               >
                 <MessageCircle className="w-6 h-6" />
-                Solicitar Orçamento
+                Solicitar avaliação em 48h
               </a>
               <div className="flex items-center gap-3 text-slate-950">
                 <Phone className="w-5 h-5" />
@@ -313,9 +220,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-2">
-              <Logo className="mb-6" />
               <p className="text-slate-500 max-w-sm mb-6">
-                Sua melhor escolha em Porto Alegre para assistência técnica de informática. Qualidade, preço justo e transparência em cada serviço.
+                Sua melhor escolha em Porto Alegre. Qualidade, preço justo e transparência em cada serviço.
               </p>
               <div className="flex gap-4">
                 {/* Social icons placeholder */}
