@@ -16,7 +16,23 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PX99NTKP');</script>
-    <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager --><!-- Event snippet for Botão Whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16490674626/OMGxCK7_ptIbEMLzrrc9',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TEC T.I</title>
